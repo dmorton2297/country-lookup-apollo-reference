@@ -4,7 +4,6 @@ import Country from '../../../shapes/country';
 import { CountryCardContainer, Emoji, Text } from './country-card.style';
 
 const CountryCard = ({ country }) => {
-    console.log(country);
     return (
         <CountryCardContainer>
             <Text>{country.name}</Text>
