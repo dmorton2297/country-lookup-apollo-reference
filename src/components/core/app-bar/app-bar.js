@@ -9,7 +9,7 @@ import { AppBarContainer } from './app-bar.style';
 const AppBar = ({ title }) => {
     return (
         <AppBarContainer>
-            <h3>Countries Lookup Apollo Reference Project</h3>
+            <h3>{title}</h3>
         </AppBarContainer>
     )
 }

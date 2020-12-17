@@ -9,7 +9,7 @@ const App = () => {
   return (
     <ApolloProvider client={GqlClient}>
       <div className="App">
-        <AppBar />
+        <AppBar title="ApolloClient Refrence - Country Search" />
         <Home />
       </div>
     </ApolloProvider>

@@ -31,10 +31,14 @@ const CountrySearchForm = ({ onSubmit, currentValues }) => {
 
     return (
         <Formik
-            initialValues={{ ...currentValues }}
+            initialValues={currentValues ? currentValues : {
+                code: '',
+                currency: '',
+                continent: ''
+            }}
             onSubmit={(values, { setSubmitting }) => {
-                handleSubmit(values);
                 setSubmitting(false);
+                handleSubmit(values);
             }}>
             {({ isSubmitting }) => (
                 <Form>
